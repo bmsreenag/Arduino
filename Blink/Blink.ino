@@ -4,7 +4,6 @@ int i;
 
 int delay_milliseconds = delay_seconds* 1000;
 int analoginput; 
-int  voltage_needed;
 void setup()
 {
 
@@ -17,9 +16,8 @@ void loop()
 {
   for(i=0;i<256;i++)
   {
-  voltage_needed;
-  analoginput = 10;
+  analoginput = i;
   analogWrite(LEDpin , analoginput);
-  delay(1000);
+  delay (1000);
   }
 }
